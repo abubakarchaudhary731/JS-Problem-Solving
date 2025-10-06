@@ -12,7 +12,6 @@ console.log("a:", a, "b:", b);
 let c = 3;
 // let c = 5;
 
-
 // ########### Let Value Change or Not after Running Function ###########
 let d = 4;
 const func = () => {
@@ -22,3 +21,22 @@ const func = () => {
 console.log("value of d before running function:", d);
 func();
 console.log("value of d after run func:", d);
+
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 1);
+}
+
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 1);
+}
+
+// var n = 0;
+// console.log(n);
+// console.log(n++); 
+// console.log(++n);
+
+// console.log(3 > 2 > 1);
